@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <title>Encriptador</title>
+</head>
+<body>
+ 
+  <main class="contenedor contenido">
+    <section class="principal">
+      <img src="img/Vector.png" alt="Logo Alura latam" class="logo">
+    
+
+      <div class="ingresar">
+        <textarea id="inputText" class="ingresar__textarea" placeholder="ingrese el texto aqui" rows="4" cols="50"></textarea>
+
+        <div class="ingresar__actions">
+          <p class="ingresar__warning"><i class="bi bi-exclamation-diamond-fill"></i> Solo letras minúsculas y sin acentos  </p>
+
+          <div class="ingresar__btns">
+            <button id="encryptBtn" class="ingresar__btn"> Encriptar <i class="bi bi-lock-fill"></i></button>
+            <button id="decryptBtn" class="ingresar__btn--blanco"> Desencriptar <i class="bi bi-unlock-fill"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contenedor">
+      <div class="mostrar__todo">
+        <div class="mostrar__text">
+          <label for="outputText"></label>
+          <div class="textarea-container">
+            <img id="muneco" src="img/Muneco.svg" style="display: none;">
+            <div class="vacio">
+              <ul>
+                <li class="text1">
+                  <h2>Ningún mensaje fue</h2>
+                  <h2>encontrado</h2>
+                </li>
+                <li class="text2">
+                  <p>Ingresa el texto que desees encriptar o</p>
+                  <p>desencriptar.</p>
+                </li>
+              </ul>
+            </div>
+            
+            <textarea id="outputText" class="ingresar__textarea ingresar__textarea--color" rows="4" cols="50" readonly></textarea>
+          </div>
+          <button type='button' id="copyBtn" class="ingresar__btn--blanco">Copiar</button>
+        </div>
+      </div>
+    </section>
+    
+<script src="script.js"></script>
+</body>
+</html>
